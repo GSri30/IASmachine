@@ -17,21 +17,21 @@ where the bits are handled by "BitsArray" (Uses strings to implement)\
 It also has various methods to get certain range of bits, get the bits representaion padded with zeros in front etc.\
 Other than the above mentioned 4 files, I have a main file, which takes in the input of assembly code from a text file("input.txt" is given as an example).\
 "Colors" file is used to implement the colors on the bash. (during the execution).\
-A few screenshots have also been included in the "screenshots" repository\
+A few screenshots have also been included in the "screenshots" repository
 
 
 ALU\
-    &nbsp;&nbsp;&nbsp;&nbsp;-Containes few registers (MBR, AC, MQ)\
-    &nbsp;&nbsp;&nbsp;&nbsp;-Containes various bit manipulations and arithematic operations. It has methods to compute\
-        &nbsp;&nbsp;-Negative number(in binary) form of a given binary\
-        &nbsp;&nbsp;-Mod of a binary\
-        &nbsp;&nbsp;-addition\
-        &nbsp;&nbsp;-subtraction\
-        &nbsp;&nbsp;-multiplication\
-        &nbsp;&nbsp;-division\
-        &nbsp;&nbsp;-Left shift\
-        &nbsp;&nbsp;-Right shift\
-    &nbsp;&nbsp;&nbsp;&nbsp;-This class is used to handle all the arithematic operations.\
+    &nbsp;&nbsp;-Containes few registers (MBR, AC, MQ)\
+    &nbsp;&nbsp;-Containes various bit manipulations and arithematic operations. It has methods to compute\
+        &nbsp;&nbsp;&nbsp;&nbsp;-Negative number(in binary) form of a given binary\
+        &nbsp;&nbsp;&nbsp;&nbsp;-Mod of a binary\
+        &nbsp;&nbsp;&nbsp;&nbsp;-addition\
+        &nbsp;&nbsp;&nbsp;&nbsp;-subtraction\
+        &nbsp;&nbsp;&nbsp;&nbsp;-multiplication\
+        &nbsp;&nbsp;&nbsp;&nbsp;-division\
+        &nbsp;&nbsp;&nbsp;&nbsp;-Left shift\
+        &nbsp;&nbsp;&nbsp;&nbsp;-Right shift\
+    &nbsp;&nbsp;-This class is used to handle all the arithematic operations.
 
 
 Memory\
@@ -43,10 +43,10 @@ Memory\
 ProgramControlUnit\
     &nbsp;&nbsp;-It takes in ALU and Memory\
     &nbsp;&nbsp;-It has two sub classes\
-        &nbsp;&nbsp;-registers (PC,MAR,IR,IBR)\
-        &nbsp;&nbsp;-ISA (Has a hashmap of opcodes and their definitions) (Which are used to decode instructions)\
-           &nbsp;&nbsp; (HALT is assigned with "000000000000" as its opcode)\
-   &nbsp;&nbsp; -Has methods to fetch and decode the instructions from the main Memory\
+        &nbsp;&nbsp;&nbsp;&nbsp;-registers (PC,MAR,IR,IBR)\
+        &nbsp;&nbsp;&nbsp;&nbsp;-ISA (Has a hashmap of opcodes and their definitions) (Which are used to decode instructions)\
+           &nbsp;&nbsp;&nbsp;&nbsp; (HALT is assigned with "000000000000" as its opcode)\
+   &nbsp;&nbsp;-Has methods to fetch and decode the instructions from the main Memory\
 
 
 IASMachine\
