@@ -6,14 +6,14 @@
   </a>
 </p>
 
-> # The implementation has the following structure:
+> The implementation has the following structure:
 
 IASMachine  
     &nbsp;&nbsp;&nbsp;&nbsp;-ALU  
     &nbsp;&nbsp;&nbsp;&nbsp;-Memory  
     &nbsp;&nbsp;&nbsp;&nbsp;-ProgramControlUnit  
 
-where the bits are handled by "BitsArray" (Uses strings to implement).\ 
+where the bits are handled by "BitsArray" (Uses strings to implement)\ 
 It also has various methods to get certain range of bits, get the bits representaion padded with zeros in front etc.\
 Other than the above mentioned 4 files, I have a main file, which takes in the input of assembly code from a text file("input.txt" is given as an example).\
 "Colors" file is used to implement the colors on the bash. (during the execution).\
@@ -35,9 +35,9 @@ ALU\
 
 
 Memory\
-    -Has method to create a main Memory\
-    -Each word is fixed as 40bits and is implemented using "BitsArray" data structure.(implemented seperately)\
-    -Creates a 2D matrix of bits (or array of "BitsArray")\
+    &nbsp;&nbsp;-Has method to create a main Memory\
+    &nbsp;&nbsp;-Each word is fixed as 40bits and is implemented using "BitsArray" data structure.(implemented seperately)\
+    &nbsp;&nbsp;-Creates a 2D matrix of bits (or array of "BitsArray")\
 
 
 ProgramControlUnit\
