@@ -8,10 +8,10 @@
 
 > # The implementation has the following structure:
 
-IASMachine
-    -ALU
-    -Memory
-    -ProgramControlUnit
+IASMachine  
+    -ALU  
+    -Memory  
+    -ProgramControlUnit  
 
 where the bits are handled by "BitsArray" (Uses strings to implement). 
 It also has various methods to get certain range of bits, get the bits representaion padded with zeros in front etc.
