@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> The implementation has the following structure:
+### The implementation has the following structure:
 
 IASMachine  
     &nbsp;&nbsp;&nbsp;&nbsp;-ALU  
@@ -37,7 +37,7 @@ ALU\
 Memory\
     &nbsp;&nbsp;-Has method to create a main Memory\
     &nbsp;&nbsp;-Each word is fixed as 40bits and is implemented using "BitsArray" data structure.(implemented seperately)\
-    &nbsp;&nbsp;-Creates a 2D matrix of bits (or array of "BitsArray")\
+    &nbsp;&nbsp;-Creates a 2D matrix of bits (or array of "BitsArray")
 
 
 ProgramControlUnit\
@@ -46,12 +46,12 @@ ProgramControlUnit\
         &nbsp;&nbsp;&nbsp;&nbsp;-registers (PC,MAR,IR,IBR)\
         &nbsp;&nbsp;&nbsp;&nbsp;-ISA (Has a hashmap of opcodes and their definitions) (Which are used to decode instructions)\
            &nbsp;&nbsp;&nbsp;&nbsp; (HALT is assigned with "000000000000" as its opcode)\
-   &nbsp;&nbsp;-Has methods to fetch and decode the instructions from the main Memory\
+   &nbsp;&nbsp;-Has methods to fetch and decode the instructions from the main Memory
 
 
 IASMachine\
     &nbsp;&nbsp;-Unites all the above classes to constitue an IAS computer\
-    &nbsp;&nbsp;-Has method to execute it. (Fetch and decode till halt (or any error occurs))\
+    &nbsp;&nbsp;-Has method to execute it. (Fetch and decode till halt (or any error occurs))
 
 ## Usage
 
